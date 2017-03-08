@@ -1,0 +1,33 @@
+{
+  "name": "vardot/varbase_story_demo",
+  "description": "Varbase Story Demo : This a Demo feature to test and see how we can use Varbase Media Entity Browsers, and Provides Story content type and related configuration.",
+  "type": "drupal-module",
+  "homepage": "https://github.com/Vardot/varbase_story_demo",
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "authors": [
+    {
+      "name": "Mohammed J. Razem",
+      "homepage": "https://github.com/moerazem",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Rajab Natshah",
+      "homepage": "https://github.com/Natshah",
+      "role": "Maintainer"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  ],
+  "require": { },
+  "extra": {
+    "branch-alias": {
+      "dev-8.x-4.x": "8.4.x-dev"
+    }
+  }
+}
