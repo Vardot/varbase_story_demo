@@ -9,6 +9,7 @@ Browsers, and Provides Story content type and related configuration.
 
 ## Installation
 
+composer require vardot/varbase_story_demo
 
 ## Configuration
 

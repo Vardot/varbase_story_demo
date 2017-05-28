@@ -16,5 +16,5 @@ dependencies:
   - text
   - user
   - varbase_media
-version: 8.x-1.0
+version: 8.x-4.0-alpha1
 package: Varbase
