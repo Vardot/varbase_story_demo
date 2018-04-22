@@ -6,16 +6,8 @@ Browsers, and Provides Story content type and related configuration.
 
 ## Requirements
    Varbase
+   Varbase Media
 
 ## Installation
 
-composer require vardot/varbase_story_demo
-
-## Configuration
-
-
-
-## Maintainers
-
-- Mohammed Razem ([mohammed-j-razem](https://www.drupal.org/u/mohammed-j-razem))
-- Rajab Natshah ([RajabNatshah](https://www.drupal.org/u/rajabnatshah))
+composer require vardot/varbase_story_demo:8.4.x-dev
