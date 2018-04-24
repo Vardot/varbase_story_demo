@@ -5,6 +5,8 @@ dependencies:
     - field.field.node.story.body
     - field.field.node.story.field_image
     - field.field.node.story.field_images
+    - field.field.node.story.field_media
+    - field.field.node.story.field_video
     - node.type.story
   module:
     - ds
@@ -17,6 +19,33 @@ third_party_settings:
     custom: false
     allow: false
     default: default
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - field_image
+        - field_images
+        - field_video
+        - field_media
+        - body
 id: node.story.default
 targetEntityType: node
 bundle: story
@@ -25,30 +54,96 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 4
     settings: {  }
     third_party_settings: {  }
+    region: main
   field_image:
-    weight: 102
+    weight: 0
     label: above
     settings:
-      view_mode: teaser
+      view_mode: s12_standard
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: entity_reference_entity_view
+    region: main
   field_images:
-    weight: 103
+    weight: 1
     label: above
     settings:
-      view_mode: teaser
+      view_mode: s03_standard
       link: false
     third_party_settings:
       ds:
         ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: ''
+            fi-cl: col-sm-3
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
     type: entity_reference_entity_view
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
+    region: main
+  field_media:
+    type: entity_reference_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    region: main
+  field_video:
+    type: entity_reference_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    region: main
 hidden:
   langcode: true
+  links: true
