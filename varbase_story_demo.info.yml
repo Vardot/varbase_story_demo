@@ -8,6 +8,7 @@ dependencies:
   - entity_browser
   - field
   - language
+  - media
   - menu_ui
   - node
   - panelizer
@@ -15,6 +16,7 @@ dependencies:
   - smart_trim
   - text
   - user
+  - varbase_core
   - varbase_media
 version: 8.x-5.x-dev
 package: Varbase

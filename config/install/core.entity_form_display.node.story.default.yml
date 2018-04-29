@@ -50,7 +50,7 @@ content:
   field_images:
     weight: 2
     settings:
-      entity_browser: images_browser
+      entity_browser: image_browser
       field_widget_display: rendered_entity
       field_widget_edit: true
       field_widget_remove: true
@@ -64,7 +64,7 @@ content:
   field_media:
     weight: 4
     settings:
-      entity_browser: general_browser
+      entity_browser: editor_media_browser
       field_widget_display: rendered_entity
       field_widget_edit: true
       field_widget_remove: true
