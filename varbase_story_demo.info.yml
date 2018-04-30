@@ -3,18 +3,7 @@ description: 'This a Demo feature to test and see how we can use Varbase Media E
 type: module
 core: 8.x
 dependencies:
-  - content_translation
-  - ds
-  - entity_browser
-  - field
-  - language
-  - menu_ui
-  - node
-  - panelizer
-  - path
-  - smart_trim
-  - text
-  - user
+  - varbase_core
   - varbase_media
-version: 8.x-4.x-dev
+version: 8.x-4.0
 package: Varbase

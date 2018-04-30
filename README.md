@@ -10,4 +10,11 @@ Browsers, and Provides Story content type and related configuration.
 
 ## Installation
 
-composer require vardot/varbase_story_demo:8.4.x-dev
+### Install Varbase VMI demo latest stable release.
+```
+composer require vardot/varbase_story_demo:8.4.0
+```
+
+### Install Varbasee VMI Demo the progress Development.
+```
+composer require vardot/varbase_story_demo:dev-8.x-4.x

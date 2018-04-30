@@ -1,4 +1,2 @@
 bundle: varbase
-excluded:
-  - core.entity_view_display.node.story.horizontal_media_teaser_large
 required: true
