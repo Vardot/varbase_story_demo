@@ -23,11 +23,7 @@
     }
   ],
   "require": {
+    "drupal/varbase_core": "5.*",
     "drupal/varbase_media": "5.*"  
-  },
-  "extra": {
-    "branch-alias": {
-      "dev-8.x-5.x": "8.5.x-dev"
-    }
   }
 }

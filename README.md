@@ -5,10 +5,11 @@ Browsers, and Provides Story content type and related configuration.
 
 
 ## Requirements
-   Varbase
+* [Varbase](https://www.drupal.org/project/varbase) profile.
 
 ## Installation
 
-composer require vardot/varbase_story_demo:8.5.x-dev
-
-## Configuration
+### Install Varbase Story Demo the progress Development.
+```
+composer require vardot/varbase_story_demo:dev-8.x-5.x
+```
