@@ -5,16 +5,16 @@ Browsers, and Provides Story content type and related configuration.
 
 
 ## Requirements
-   Varbase
+   Varbase Core
    Varbase Media
 
 ## Installation
 
-### Install Varbase VMI demo latest stable release.
+### Install Varbase Story demo latest stable release.
 ```
-composer require vardot/varbase_story_demo:8.4.0
+composer require vardot/varbase_story_demo:8.4.1
 ```
 
-### Install Varbasee VMI Demo the progress Development.
+### Install Varbasee Story Demo the progress Development.
 ```
 composer require vardot/varbase_story_demo:dev-8.x-4.x
