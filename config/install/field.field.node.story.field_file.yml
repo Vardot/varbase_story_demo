@@ -2,14 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_images
-    - media.type.image
+    - field.storage.node.field_file
+    - media.type.file
     - node.type.story
-id: node.story.field_images
-field_name: field_images
+id: node.story.field_file
+field_name: field_file
 entity_type: node
 bundle: story
-label: field_images
+label: File
 description: ''
 required: false
 translatable: false
@@ -19,9 +19,9 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      file: file
     sort:
       field: _none
     auto_create: false
-    auto_create_bundle: image
+    auto_create_bundle: ''
 field_type: entity_reference

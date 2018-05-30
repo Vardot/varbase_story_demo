@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.story.body
+    - field.field.node.story.field_file
     - field.field.node.story.field_image
     - field.field.node.story.field_images
     - field.field.node.story.field_media
@@ -45,7 +46,9 @@ third_party_settings:
         - field_images
         - field_video
         - field_media
+        - field_file
         - body
+        - field_fi
 id: node.story.default
 targetEntityType: node
 bundle: story
@@ -54,15 +57,31 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 4
+    weight: 5
     settings: {  }
     third_party_settings: {  }
+    region: main
+  field_file:
+    type: entity_reference_entity_view
+    weight: 4
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     region: main
   field_image:
     weight: 0
     label: above
     settings:
-      view_mode: s12_standard
+      view_mode: s04_standard
       link: false
     third_party_settings:
       ds:
@@ -117,7 +136,7 @@ content:
     weight: 3
     label: above
     settings:
-      view_mode: default
+      view_mode: s06_standard
       link: false
     third_party_settings:
       ds:
@@ -133,7 +152,7 @@ content:
     weight: 2
     label: above
     settings:
-      view_mode: default
+      view_mode: se2e_standard
       link: false
     third_party_settings:
       ds:

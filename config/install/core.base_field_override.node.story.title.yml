@@ -2,20 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.body
     - node.type.story
-  module:
-    - text
-id: node.story.body
-field_name: body
+id: node.story.title
+field_name: title
 entity_type: node
 bundle: story
-label: Body
+label: Title
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings:
-  display_summary: true
-field_type: text_with_summary
+settings: {  }
+field_type: string

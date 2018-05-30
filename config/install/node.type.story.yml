@@ -5,13 +5,12 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
-name: 'Story Demo'
+    available_menus: {  }
+    parent: ''
+name: Story
 type: story
-description: 'Use <em>Story Demo </em> to test Varbase Media, and Varbase Entity Browsers.'
+description: 'Use <em>Story</em> to add a story of media content as Image, number of Images, a video, and general media content.'
 help: ''
-new_revision: false
+new_revision: true
 preview_mode: 1
 display_submitted: false

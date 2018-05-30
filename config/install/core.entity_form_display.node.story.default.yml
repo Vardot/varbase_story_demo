@@ -4,6 +4,7 @@ dependencies:
   config:
     - entity_browser.browser.video_browser
     - field.field.node.story.body
+    - field.field.node.story.field_file
     - field.field.node.story.field_image
     - field.field.node.story.field_images
     - field.field.node.story.field_media
@@ -32,6 +33,20 @@ content:
     weight: 8
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_file:
+    weight: 27
+    settings:
+      entity_browser: editor_media_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: field_preview
+      open: false
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
     region: content
   field_image:
     weight: 1
@@ -82,10 +97,10 @@ content:
       field_widget_display: rendered_entity
       field_widget_edit: true
       field_widget_remove: true
+      open: true
       selection_mode: selection_append
       field_widget_display_settings:
         view_mode: field_preview
-      open: false
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content

@@ -6,6 +6,8 @@ dependencies:
     - field.field.node.story.body
     - field.field.node.story.field_image
     - field.field.node.story.field_images
+    - field.field.node.story.field_media
+    - field.field.node.story.field_video
     - node.type.story
   module:
     - ds
@@ -49,5 +51,7 @@ content:
             classes: {  }
 hidden:
   field_images: true
+  field_media: true
+  field_video: true
   langcode: true
   links: true

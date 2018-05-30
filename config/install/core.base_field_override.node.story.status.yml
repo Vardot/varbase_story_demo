@@ -3,17 +3,17 @@ status: true
 dependencies:
   config:
     - node.type.story
-id: node.story.promote
-field_name: promote
+id: node.story.status
+field_name: status
 entity_type: node
 bundle: story
-label: 'Promoted to front page'
+label: Published
 description: ''
 required: false
 translatable: false
 default_value:
   -
-    value: 0
+    value: 1
 default_value_callback: ''
 settings:
   on_label: 'On'
