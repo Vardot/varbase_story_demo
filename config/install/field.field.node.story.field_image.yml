@@ -9,7 +9,7 @@ id: node.story.field_image
 field_name: field_image
 entity_type: node
 bundle: story
-label: field_image
+label: 'Lead Image'
 description: ''
 required: false
 translatable: false

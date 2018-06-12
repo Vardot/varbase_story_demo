@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.story.body
     - field.field.node.story.field_file
     - field.field.node.story.field_image
@@ -12,7 +13,6 @@ dependencies:
   module:
     - ds
     - panelizer
-    - slick_media
     - text
     - user
 third_party_settings:
@@ -49,10 +49,10 @@ third_party_settings:
         - field_media
         - field_file
         - body
-id: node.story.default
+id: node.story.full
 targetEntityType: node
 bundle: story
-mode: default
+mode: full
 content:
   body:
     label: hidden
@@ -70,7 +70,6 @@ content:
       link: false
     third_party_settings:
       ds:
-        ds_limit: ''
         ft:
           id: default
           settings:
@@ -82,7 +81,7 @@ content:
     weight: 0
     label: above
     settings:
-      view_mode: se2e_standard
+      view_mode: s04_standard
       link: false
     third_party_settings:
       ds:
@@ -98,90 +97,39 @@ content:
     weight: 1
     label: above
     settings:
-      vanilla: true
-      optionset: default
-      optionset_thumbnail: ''
-      skin: fullwidth
-      skin_thumbnail: ''
-      image_style: ''
-      thumbnail_style: ''
-      responsive_image_style: ''
-      thumbnail_effect: ''
-      thumbnail_position: ''
-      media_switch: ''
-      view_mode: s04_square
-      ratio: ''
-      iframe_lazy: true
-      image: ''
-      title: ''
-      link: ''
-      layout: ''
-      class: ''
-      cache: 0
-      sizes: ''
-      current_view_mode: default
-      background: false
-      caption:
-        field_media_image: '0'
-      breakpoints:
-        xs:
-          breakpoint: ''
-          image_style: ''
-          width: ''
-        sm:
-          breakpoint: ''
-          image_style: ''
-          width: ''
-        md:
-          breakpoint: ''
-          image_style: ''
-          width: ''
-        lg:
-          breakpoint: ''
-          image_style: ''
-          width: ''
-        xl:
-          breakpoint: ''
-          image_style: ''
-          width: ''
-      override: false
-      overridables:
-        arrows: '0'
-        autoplay: '0'
-        dots: '0'
-        draggable: '0'
-        infinite: '0'
-        mouseWheel: '0'
-        randomize: '0'
-        variableWidth: '0'
-      thumbnail: ''
-      preserve_keys: false
-      thumbnail_caption: ''
-      visible_items: 0
-      skin_arrows: ''
-      skin_dots: ''
-      style: ''
-      icon: ''
-      box_caption: ''
-      box_caption_custom: ''
-      box_style: ''
-      box_media_style: ''
-      grid: 0
-      grid_header: ''
-      grid_medium: 0
-      grid_small: 0
-      id: ''
-      overlay: ''
+      view_mode: s03_standard
+      link: false
     third_party_settings:
       ds:
         ds_limit: ''
         ft:
-          id: default
+          id: expert
           settings:
             lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: ''
+            fi-cl: col-sm-3
+            fi-at: ''
+            suffix: ''
+            lbw: false
             lb-col: false
-            classes: {  }
-    type: slick_media
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
+    type: entity_reference_entity_view
     region: main
   field_media:
     type: entity_reference_entity_view

@@ -9,7 +9,7 @@ id: node.story.field_file
 field_name: field_file
 entity_type: node
 bundle: story
-label: File
+label: 'Attachment File'
 description: ''
 required: false
 translatable: false

@@ -9,7 +9,7 @@ id: node.story.field_images
 field_name: field_images
 entity_type: node
 bundle: story
-label: field_images
+label: 'Image Gallery '
 description: ''
 required: false
 translatable: false

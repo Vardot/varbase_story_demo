@@ -1,9 +1,10 @@
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.story.body
+    - field.field.node.story.field_file
     - field.field.node.story.field_image
     - field.field.node.story.field_images
     - field.field.node.story.field_media
@@ -50,6 +51,7 @@ content:
             lb-col: false
             classes: {  }
 hidden:
+  field_file: true
   field_images: true
   field_media: true
   field_video: true

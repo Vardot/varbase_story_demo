@@ -5,6 +5,8 @@ dependencies:
     - field.storage.node.field_media
     - media.type.file
     - media.type.image
+    - media.type.instagram
+    - media.type.tweet
     - media.type.video
     - media.type.video_embed
     - node.type.story
@@ -12,7 +14,7 @@ id: node.story.field_media
 field_name: field_media
 entity_type: node
 bundle: story
-label: Media
+label: 'Mixed Media'
 description: ''
 required: false
 translatable: false
@@ -24,6 +26,8 @@ settings:
     target_bundles:
       file: file
       image: image
+      instagram: instagram
+      tweet: tweet
       video_embed: video_embed
       video: video
     sort:
