@@ -11,16 +11,10 @@ dependencies:
     - node.type.story
   module:
     - ds
-    - panelizer
     - slick_media
     - text
     - user
 third_party_settings:
-  panelizer:
-    enable: false
-    custom: false
-    allow: false
-    default: default
   ds:
     layout:
       id: bs_1col
