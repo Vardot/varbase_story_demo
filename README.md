@@ -12,7 +12,7 @@ Browsers, and Provides Story content type and related configuration.
 
 ### Install Varbase Story demo latest stable release.
 ```
-composer require vardot/varbase_story_demo:8.5.0-alpha1
+composer require vardot/varbase_story_demo:8.5.0
 ```
 
 ### Install Varbasee Story Demo the progress Development.
