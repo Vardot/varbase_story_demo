@@ -12,15 +12,8 @@ dependencies:
     - node.type.story
   module:
     - ds
-    - panelizer
     - text
     - user
-third_party_settings:
-  panelizer:
-    enable: false
-    custom: false
-    allow: false
-    default: default
 id: node.story.teaser
 targetEntityType: node
 bundle: story

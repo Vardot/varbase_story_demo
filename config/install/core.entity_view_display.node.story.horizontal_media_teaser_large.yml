@@ -4,13 +4,14 @@ dependencies:
   config:
     - core.entity_view_mode.node.horizontal_media_teaser_large
     - field.field.node.story.body
+    - field.field.node.story.field_file
     - field.field.node.story.field_image
-    - field.field.node.story.field_video
+    - field.field.node.story.field_images
     - field.field.node.story.field_media
+    - field.field.node.story.field_video
     - node.type.story
   module:
     - ds
-    - panelizer
     - smart_trim
     - user
 third_party_settings:
@@ -48,11 +49,6 @@ third_party_settings:
           link: true
           wrapper: h3
           class: ''
-  panelizer:
-    enable: false
-    custom: false
-    allow: false
-    default: default
 id: node.story.horizontal_media_teaser_large
 targetEntityType: node
 bundle: story
@@ -111,15 +107,6 @@ content:
             fis: false
             fi: false
     region: left
-  field_video:
-    type: entity_reference_entity_view
-    weight: 0
-    label: hidden
-    settings:
-      view_mode: s06_standard
-      link: false
-    third_party_settings: {  }
-    region: left
   field_media:
     type: entity_reference_entity_view
     weight: 0
@@ -129,6 +116,17 @@ content:
       link: false
     third_party_settings: {  }
     region: left
+  field_video:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: s06_standard
+      link: false
+    third_party_settings: {  }
+    region: left
 hidden:
+  field_file: true
+  field_images: true
   langcode: true
   links: true

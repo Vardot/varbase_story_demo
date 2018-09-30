@@ -4,14 +4,15 @@ dependencies:
   config:
     - core.entity_view_mode.node.tout_medium
     - field.field.node.story.body
+    - field.field.node.story.field_file
     - field.field.node.story.field_image
-    - field.field.node.story.field_video
+    - field.field.node.story.field_images
     - field.field.node.story.field_media
+    - field.field.node.story.field_video
     - node.type.story
   module:
     - ds
     - field_group
-    - panelizer
     - user
 third_party_settings:
   ds:
@@ -46,11 +47,6 @@ third_party_settings:
           link: true
           wrapper: h3
           class: ''
-  panelizer:
-    enable: false
-    custom: false
-    allow: false
-    default: default
   field_group:
     group_tout_content:
       children:
@@ -82,7 +78,7 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: main
-  field_video:
+  field_media:
     weight: 0
     label: hidden
     settings:
@@ -91,7 +87,7 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: main
-  field_media:
+  field_video:
     weight: 0
     label: hidden
     settings:
@@ -102,5 +98,7 @@ content:
     region: main
 hidden:
   body: true
+  field_file: true
+  field_images: true
   langcode: true
   links: true

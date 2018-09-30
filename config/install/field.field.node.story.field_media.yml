@@ -6,9 +6,9 @@ dependencies:
     - media.type.file
     - media.type.image
     - media.type.instagram
+    - media.type.remote_video
     - media.type.tweet
     - media.type.video
-    - media.type.video_embed
     - node.type.story
 id: node.story.field_media
 field_name: field_media
@@ -28,7 +28,7 @@ settings:
       image: image
       instagram: instagram
       tweet: tweet
-      video_embed: video_embed
+      remote_video: remote_video
       video: video
     sort:
       field: _none

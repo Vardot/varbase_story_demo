@@ -4,21 +4,17 @@ dependencies:
   config:
     - core.entity_view_mode.node.tout_large
     - field.field.node.story.body
+    - field.field.node.story.field_file
     - field.field.node.story.field_image
-    - field.field.node.story.field_video
+    - field.field.node.story.field_images
     - field.field.node.story.field_media
+    - field.field.node.story.field_video
     - node.type.story
   module:
     - ds
     - field_group
-    - panelizer
     - user
 third_party_settings:
-  panelizer:
-    enable: false
-    custom: false
-    allow: false
-    default: default
   ds:
     layout:
       id: tout_large
@@ -82,7 +78,7 @@ content:
       link: false
     third_party_settings: {  }
     region: main
-  field_video:
+  field_media:
     type: entity_reference_entity_view
     weight: 0
     label: hidden
@@ -91,7 +87,7 @@ content:
       link: false
     third_party_settings: {  }
     region: main
-  field_media:
+  field_video:
     type: entity_reference_entity_view
     weight: 0
     label: hidden
@@ -102,5 +98,7 @@ content:
     region: main
 hidden:
   body: true
+  field_file: true
+  field_images: true
   langcode: true
   links: true
