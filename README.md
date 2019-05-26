@@ -13,5 +13,5 @@ Browsers, and Provides Story content type and related configuration.
 ### Install Varbasee Story Demo the progress Development.
 
 ```
-composer require vardot/varbase_story_demo:dev-8.x-6.x
+composer require vardot/varbase_story_demo:dev-8.x-7.x
 ```
