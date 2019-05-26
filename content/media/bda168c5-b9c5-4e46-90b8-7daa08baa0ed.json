@@ -1,0 +1,170 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/media\/9?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/media\/remote_video"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/media\/remote_video\/revision_user": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/media\/remote_video\/thumbnail": [
+            {
+                "href": "http:\/\/default\/file\/13?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/media\/remote_video\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "mid": [
+        {
+            "value": 9
+        }
+    ],
+    "uuid": [
+        {
+            "value": "bda168c5-b9c5-4e46-90b8-7daa08baa0ed"
+        }
+    ],
+    "vid": [
+        {
+            "value": 9
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "bundle": [
+        {
+            "target_id": "remote_video"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2019-05-14T12:44:58+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/media\/remote_video\/revision_user": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "8f0e2b28-be95-4bbb-8340-f374ec19e891"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/media\/remote_video\/thumbnail": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/file\/13?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "26d4b170-dd99-46f0-8710-e06c707fc5e5"
+                    }
+                ],
+                "alt": "",
+                "title": null,
+                "width": "480",
+                "height": "360"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/media\/remote_video\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "8f0e2b28-be95-4bbb-8340-f374ec19e891"
+                    }
+                ]
+            }
+        ]
+    },
+    "revision_log_message": [
+        {
+            "value": "Created new Remote video"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "name": [
+        {
+            "value": "Remote Youtube Video no cover image"
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-05-14T12:44:58+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-05-14T12:44:58+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+            }
+        }
+    ],
+    "field_media_in_library": [
+        {
+            "value": true
+        }
+    ],
+    "field_media_oembed_video": [
+        {
+            "value": "https:\/\/www.youtube.com\/watch?v=jnLSYfObARA",
+            "lang": "en"
+        }
+    ]
+}

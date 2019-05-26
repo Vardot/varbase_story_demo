@@ -9,3 +9,5 @@ dependencies:
   - varbase_media:varbase_media
   - varbase_media:varbase_media_instagram
   - varbase_media:varbase_media_twitter
+  - default_content:default_content
+  - better_normalizers:better_normalizers
