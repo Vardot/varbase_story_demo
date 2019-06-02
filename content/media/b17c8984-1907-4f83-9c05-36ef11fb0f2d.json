@@ -23,8 +23,7 @@
         ],
         "http:\/\/drupal.org\/rest\/relation\/media\/file\/field_media_file": [
             {
-                "href": "http:\/\/default\/file\/4?_format=hal_json",
-                "lang": "en"
+                "href": "http:\/\/default\/file\/4?_format=hal_json"
             }
         ]
     },
@@ -52,12 +51,6 @@
     "bundle": [
         {
             "target_id": "file"
-        }
-    ],
-    "revision_created": [
-        {
-            "value": "2019-05-14T12:34:30+00:00",
-            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "_embedded": {
@@ -131,19 +124,10 @@
                         "value": "f731b266-17a1-4581-a010-41703810e8d9"
                     }
                 ],
-                "lang": "en",
-                "display": "1",
-                "description": "",
-                "alt": "",
-                "title": ""
+                "display": "1"
             }
         ]
     },
-    "revision_log_message": [
-        {
-            "value": "Created new File"
-        }
-    ],
     "status": [
         {
             "value": true
@@ -156,32 +140,18 @@
     ],
     "created": [
         {
-            "value": "2019-05-14T12:33:47+00:00",
-            "format": "Y-m-d\\TH:i:sP"
+            "value": 1501144348
         }
     ],
     "changed": [
         {
-            "value": "2019-05-14T12:34:30+00:00",
-            "format": "Y-m-d\\TH:i:sP"
+            "value": 1501159474
         }
     ],
     "default_langcode": [
         {
             "value": true,
             "lang": "en"
-        }
-    ],
-    "revision_translation_affected": [
-        {
-            "value": true,
-            "lang": "en"
-        }
-    ],
-    "metatag": [
-        {
-            "value": {
-            }
         }
     ],
     "field_media_in_library": [

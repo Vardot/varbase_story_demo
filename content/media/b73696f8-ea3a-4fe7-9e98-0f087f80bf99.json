@@ -13,20 +13,17 @@
         ],
         "http:\/\/drupal.org\/rest\/relation\/media\/audio\/thumbnail": [
             {
-                "href": "http:\/\/default\/file\/2?_format=hal_json",
-                "lang": "en"
+                "href": "http:\/\/default\/file\/2?_format=hal_json"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/media\/audio\/uid": [
             {
-                "href": "http:\/\/default\/user\/1?_format=hal_json",
-                "lang": "en"
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/media\/audio\/field_media_audio_file": [
             {
-                "href": "http:\/\/default\/file\/1?_format=hal_json",
-                "lang": "en"
+                "href": "http:\/\/default\/file\/1?_format=hal_json"
             }
         ]
     },
@@ -54,12 +51,6 @@
     "bundle": [
         {
             "target_id": "audio"
-        }
-    ],
-    "revision_created": [
-        {
-            "value": "2019-05-14T12:32:39+00:00",
-            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "_embedded": {
@@ -95,7 +86,6 @@
                         "value": "797aaa1e-7954-4889-ad40-b91bcdade9ed"
                     }
                 ],
-                "lang": "en",
                 "alt": "",
                 "title": null,
                 "width": "180",
@@ -116,8 +106,7 @@
                     {
                         "value": "8f0e2b28-be95-4bbb-8340-f374ec19e891"
                     }
-                ],
-                "lang": "en"
+                ]
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/media\/audio\/field_media_audio_file": [
@@ -135,43 +124,28 @@
                         "value": "00b91ab5-dd60-4747-9e4e-ac76f27e62e6"
                     }
                 ],
-                "lang": "en",
-                "display": "1",
-                "description": "",
-                "alt": "",
-                "title": ""
+                "display": "1"
             }
         ]
     },
-    "revision_log_message": [
-        {
-            "value": "Created new Audio"
-        }
-    ],
     "status": [
         {
-            "value": true,
-            "lang": "en"
+            "value": true
         }
     ],
     "name": [
         {
-            "value": "Audio Drupal con",
-            "lang": "en"
+            "value": "Audio Drupal con"
         }
     ],
     "created": [
         {
-            "value": "2019-05-14T12:32:27+00:00",
-            "lang": "en",
-            "format": "Y-m-d\\TH:i:sP"
+            "value": 1501144348
         }
     ],
     "changed": [
         {
-            "value": "2019-05-14T12:32:39+00:00",
-            "lang": "en",
-            "format": "Y-m-d\\TH:i:sP"
+            "value": 1501159474
         }
     ],
     "default_langcode": [
@@ -180,22 +154,9 @@
             "lang": "en"
         }
     ],
-    "revision_translation_affected": [
-        {
-            "value": true,
-            "lang": "en"
-        }
-    ],
-    "metatag": [
-        {
-            "value": {
-            }
-        }
-    ],
     "field_media_in_library": [
         {
-            "value": true,
-            "lang": "en"
+            "value": true
         }
     ]
 }

@@ -79,20 +79,12 @@
     ],
     "created": [
         {
-            "value": "2019-05-14T12:53:58+00:00",
-            "format": "Y-m-d\\TH:i:sP"
+            "value": 1501144348
         }
     ],
     "changed": [
         {
-            "value": "2019-05-14T12:54:03+00:00",
-            "format": "Y-m-d\\TH:i:sP"
-        }
-    ],
-    "metatag": [
-        {
-            "value": {
-            }
+            "value": 1501159474
         }
     ],
     "data": [

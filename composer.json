@@ -25,7 +25,6 @@
   "require": {
     "drupal/varbase_core": "6.*",
     "drupal/varbase_media": "6.*",
-    "drupal/file_entity": "~2.0",
     "drupal/better_normalizers": "~1.0"
   }
 }
