@@ -28,8 +28,7 @@
         ],
         "http:\/\/drupal.org\/rest\/relation\/media\/video\/field_media_video_file": [
             {
-                "href": "http:\/\/default\/file\/11?_format=hal_json",
-                "lang": "en"
+                "href": "http:\/\/default\/file\/11?_format=hal_json"
             }
         ]
     },
@@ -56,12 +55,6 @@
     "bundle": [
         {
             "target_id": "video"
-        }
-    ],
-    "revision_created": [
-        {
-            "value": "2019-05-14T12:43:35+00:00",
-            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "_embedded": {
@@ -156,7 +149,6 @@
                         "value": "8978c2f6-34ad-41bf-995a-0ff2893801de"
                     }
                 ],
-                "lang": "en",
                 "display": "1",
                 "description": "",
                 "alt": "",
@@ -164,11 +156,6 @@
             }
         ]
     },
-    "revision_log_message": [
-        {
-            "value": "Created new Video"
-        }
-    ],
     "status": [
         {
             "value": true
@@ -181,32 +168,18 @@
     ],
     "created": [
         {
-            "value": "2019-05-14T12:42:56+00:00",
-            "format": "Y-m-d\\TH:i:sP"
+            "value": 1501144348
         }
     ],
     "changed": [
         {
-            "value": "2019-05-14T12:43:35+00:00",
-            "format": "Y-m-d\\TH:i:sP"
+            "value": 1501159474
         }
     ],
     "default_langcode": [
         {
             "value": true,
             "lang": "en"
-        }
-    ],
-    "revision_translation_affected": [
-        {
-            "value": true,
-            "lang": "en"
-        }
-    ],
-    "metatag": [
-        {
-            "value": {
-            }
         }
     ],
     "field_media_in_library": [
