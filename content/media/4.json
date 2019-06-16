@@ -1,0 +1,163 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/media\/4\/edit?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/media\/tweet"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/media\/tweet\/revision_user": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/media\/tweet\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/media\/tweet\/thumbnail": [
+            {
+                "href": "http:\/\/default\/file\/6?_format=hal_json"
+            }
+        ]
+    },
+    "mid": [
+        {
+            "value": 4
+        }
+    ],
+    "uuid": [
+        {
+            "value": "d889accb-15d9-47ed-9bac-d04986111c16"
+        }
+    ],
+    "vid": [
+        {
+            "value": 4
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "bundle": [
+        {
+            "target_id": "tweet"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2019-06-13T15:26:59+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/media\/tweet\/revision_user": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "10efc7d8-8181-4c03-856b-cb52da640103"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/media\/tweet\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "10efc7d8-8181-4c03-856b-cb52da640103"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/media\/tweet\/thumbnail": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/file\/6?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d847506c-1285-4e6e-b5c3-61f1942f3969"
+                    }
+                ],
+                "alt": "",
+                "title": null,
+                "width": "180",
+                "height": "180"
+            }
+        ]
+    },
+    "revision_log_message": [
+        {
+            "value": "Created new Tweet"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "name": [
+        {
+            "value": "Tweet about Drupal distributions "
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-06-13T15:26:59+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-06-13T15:26:59+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "field_media_in_library": [
+        {
+            "value": true
+        }
+    ],
+    "field_media_twitter": [
+        {
+            "value": "https:\/\/twitter.com\/vardot\/status\/1123152015289475072"
+        }
+    ]
+}
