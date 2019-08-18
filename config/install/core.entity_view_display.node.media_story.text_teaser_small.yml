@@ -1,0 +1,125 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.text_teaser_small
+    - field.field.node.media_story.body
+    - field.field.node.media_story.field_2_audios
+    - field.field.node.media_story.field_2_files
+    - field.field.node.media_story.field_2_images
+    - field.field.node.media_story.field_2_instagram_posts
+    - field.field.node.media_story.field_2_medias
+    - field.field.node.media_story.field_2_tweets
+    - field.field.node.media_story.field_2_videos
+    - field.field.node.media_story.field_3_audios
+    - field.field.node.media_story.field_3_files
+    - field.field.node.media_story.field_3_images
+    - field.field.node.media_story.field_3_instagram_posts
+    - field.field.node.media_story.field_3_medias
+    - field.field.node.media_story.field_3_tweets
+    - field.field.node.media_story.field_3_videos
+    - field.field.node.media_story.field_audio
+    - field.field.node.media_story.field_audios
+    - field.field.node.media_story.field_file
+    - field.field.node.media_story.field_files
+    - field.field.node.media_story.field_gallery
+    - field.field.node.media_story.field_image
+    - field.field.node.media_story.field_images
+    - field.field.node.media_story.field_instagram
+    - field.field.node.media_story.field_instagram_posts
+    - field.field.node.media_story.field_media
+    - field.field.node.media_story.field_medias
+    - field.field.node.media_story.field_tweet
+    - field.field.node.media_story.field_tweets
+    - field.field.node.media_story.field_video
+    - field.field.node.media_story.field_videos
+    - node.type.media_story
+  module:
+    - ds
+    - smart_trim
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: text_teaser_small
+      path: modules/vmi
+      library: vmi/text_teaser_small
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          main: div
+        outer_wrapper: article
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      main:
+        - node_title
+        - body
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
+id: node.media_story.text_teaser_small
+targetEntityType: node
+bundle: media_story
+mode: text_teaser_small
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 2
+    settings:
+      trim_length: 20
+      trim_type: words
+      trim_suffix: ' ...'
+      more_link: false
+      more_text: More
+      summary_handler: full
+      trim_options:
+        text: true
+      more_class: more-link
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_2_audios: true
+  field_2_files: true
+  field_2_images: true
+  field_2_instagram_posts: true
+  field_2_medias: true
+  field_2_tweets: true
+  field_2_videos: true
+  field_3_audios: true
+  field_3_files: true
+  field_3_images: true
+  field_3_instagram_posts: true
+  field_3_medias: true
+  field_3_tweets: true
+  field_3_videos: true
+  field_audio: true
+  field_audios: true
+  field_file: true
+  field_files: true
+  field_gallery: true
+  field_image: true
+  field_images: true
+  field_instagram: true
+  field_instagram_posts: true
+  field_media: true
+  field_medias: true
+  field_tweet: true
+  field_tweets: true
+  field_video: true
+  field_videos: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

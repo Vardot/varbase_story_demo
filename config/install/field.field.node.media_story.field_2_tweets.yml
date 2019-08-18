@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_2_tweets
+    - media.type.tweet
+    - node.type.media_story
+id: node.media_story.field_2_tweets
+field_name: field_2_tweets
+entity_type: node
+bundle: media_story
+label: '2 Tweets'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      tweet: tweet
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

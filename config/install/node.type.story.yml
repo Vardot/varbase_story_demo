@@ -7,9 +7,9 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: Story
+name: 'Story (Entity Browser)'
 type: story
-description: 'Use <em>Story</em> to add a story of media content as Image, number of Images, a video, and general media content.'
+description: 'Use <em>Story (Entity Browser)</em> to add a media using the Entity Browser.'
 help: ''
 new_revision: true
 preview_mode: 1

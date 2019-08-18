@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Story (Media Library)'
+type: media_story
+description: 'Use <em>Story (Media Library)</em> to add a story of media content  with Drupal core Media Library.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

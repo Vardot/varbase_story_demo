@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.media_story
+id: node.media_story
+target_entity_type_id: node
+target_bundle: media_story
+default_langcode: site_default
+language_alterable: false

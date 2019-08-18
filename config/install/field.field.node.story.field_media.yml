@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_media
+    - media.type.audio
     - media.type.file
     - media.type.image
     - media.type.instagram
@@ -14,7 +15,7 @@ id: node.story.field_media
 field_name: field_media
 entity_type: node
 bundle: story
-label: 'Mixed Media'
+label: '1 Media item'
 description: ''
 required: false
 translatable: false
@@ -24,11 +25,12 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
+      audio: audio
       file: file
       image: image
       instagram: instagram
-      tweet: tweet
       remote_video: remote_video
+      tweet: tweet
       video: video
     sort:
       field: _none

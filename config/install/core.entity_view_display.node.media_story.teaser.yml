@@ -1,0 +1,101 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.media_story.body
+    - field.field.node.media_story.field_2_audios
+    - field.field.node.media_story.field_2_files
+    - field.field.node.media_story.field_2_images
+    - field.field.node.media_story.field_2_instagram_posts
+    - field.field.node.media_story.field_2_medias
+    - field.field.node.media_story.field_2_tweets
+    - field.field.node.media_story.field_2_videos
+    - field.field.node.media_story.field_3_audios
+    - field.field.node.media_story.field_3_files
+    - field.field.node.media_story.field_3_images
+    - field.field.node.media_story.field_3_instagram_posts
+    - field.field.node.media_story.field_3_medias
+    - field.field.node.media_story.field_3_tweets
+    - field.field.node.media_story.field_3_videos
+    - field.field.node.media_story.field_audio
+    - field.field.node.media_story.field_audios
+    - field.field.node.media_story.field_file
+    - field.field.node.media_story.field_files
+    - field.field.node.media_story.field_gallery
+    - field.field.node.media_story.field_image
+    - field.field.node.media_story.field_images
+    - field.field.node.media_story.field_instagram
+    - field.field.node.media_story.field_instagram_posts
+    - field.field.node.media_story.field_media
+    - field.field.node.media_story.field_medias
+    - field.field.node.media_story.field_tweet
+    - field.field.node.media_story.field_tweets
+    - field.field.node.media_story.field_video
+    - field.field.node.media_story.field_videos
+    - node.type.media_story
+  module:
+    - ds
+    - text
+    - user
+id: node.media_story.teaser
+targetEntityType: node
+bundle: media_story
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: s03_standard
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+hidden:
+  field_2_audios: true
+  field_2_files: true
+  field_2_images: true
+  field_2_instagram_posts: true
+  field_2_medias: true
+  field_2_tweets: true
+  field_2_videos: true
+  field_3_audios: true
+  field_3_files: true
+  field_3_images: true
+  field_3_instagram_posts: true
+  field_3_medias: true
+  field_3_tweets: true
+  field_3_videos: true
+  field_audio: true
+  field_audios: true
+  field_file: true
+  field_files: true
+  field_gallery: true
+  field_images: true
+  field_instagram: true
+  field_instagram_posts: true
+  field_media: true
+  field_medias: true
+  field_tweet: true
+  field_tweets: true
+  field_video: true
+  field_videos: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

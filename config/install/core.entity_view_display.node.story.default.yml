@@ -3,11 +3,35 @@ status: true
 dependencies:
   config:
     - field.field.node.story.body
+    - field.field.node.story.field_2_audios
+    - field.field.node.story.field_2_files
+    - field.field.node.story.field_2_images
+    - field.field.node.story.field_2_instagram_posts
+    - field.field.node.story.field_2_medias
+    - field.field.node.story.field_2_tweets
+    - field.field.node.story.field_2_videos
+    - field.field.node.story.field_3_audios
+    - field.field.node.story.field_3_files
+    - field.field.node.story.field_3_images
+    - field.field.node.story.field_3_instagram_posts
+    - field.field.node.story.field_3_medias
+    - field.field.node.story.field_3_tweets
+    - field.field.node.story.field_3_videos
+    - field.field.node.story.field_audio
+    - field.field.node.story.field_audios
     - field.field.node.story.field_file
+    - field.field.node.story.field_files
+    - field.field.node.story.field_gallery
     - field.field.node.story.field_image
     - field.field.node.story.field_images
+    - field.field.node.story.field_instagram
+    - field.field.node.story.field_instagram_posts
     - field.field.node.story.field_media
+    - field.field.node.story.field_medias
+    - field.field.node.story.field_tweet
+    - field.field.node.story.field_tweets
     - field.field.node.story.field_video
+    - field.field.node.story.field_videos
     - node.type.story
   module:
     - ds
@@ -55,6 +79,150 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: main
+  field_2_audios:
+    type: entity_reference_entity_view
+    weight: 23
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_2_files:
+    type: entity_reference_entity_view
+    weight: 26
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_2_images:
+    type: entity_reference_entity_view
+    weight: 7
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_2_instagram_posts:
+    type: entity_reference_entity_view
+    weight: 30
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_2_medias:
+    type: entity_reference_entity_view
+    weight: 16
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_2_tweets:
+    type: entity_reference_entity_view
+    weight: 19
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_2_videos:
+    type: entity_reference_entity_view
+    weight: 9
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_3_audios:
+    type: entity_reference_entity_view
+    weight: 24
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_3_files:
+    type: entity_reference_entity_view
+    weight: 27
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_3_images:
+    type: entity_reference_entity_view
+    weight: 8
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_3_instagram_posts:
+    type: entity_reference_entity_view
+    weight: 31
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_3_medias:
+    type: entity_reference_entity_view
+    weight: 17
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_3_tweets:
+    type: entity_reference_entity_view
+    weight: 20
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_3_videos:
+    type: entity_reference_entity_view
+    weight: 12
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_audio:
+    type: entity_reference_entity_view
+    weight: 22
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_audios:
+    type: entity_reference_entity_view
+    weight: 25
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
   field_file:
     type: entity_reference_entity_view
     weight: 4
@@ -72,6 +240,24 @@ content:
             lb-col: false
             classes: {  }
     region: main
+  field_files:
+    type: entity_reference_entity_view
+    weight: 28
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_gallery:
+    type: entity_reference_entity_view
+    weight: 6
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
   field_image:
     weight: 0
     label: above
@@ -177,6 +363,24 @@ content:
             classes: {  }
     type: slick_media
     region: main
+  field_instagram:
+    type: entity_reference_entity_view
+    weight: 29
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_instagram_posts:
+    type: entity_reference_entity_view
+    weight: 32
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
   field_media:
     type: entity_reference_entity_view
     weight: 3
@@ -193,6 +397,33 @@ content:
             lb-col: false
             classes: {  }
     region: main
+  field_medias:
+    type: entity_reference_entity_view
+    weight: 10
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_tweet:
+    type: entity_reference_entity_view
+    weight: 18
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_tweets:
+    type: entity_reference_entity_view
+    weight: 21
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
   field_video:
     type: entity_reference_entity_view
     weight: 2
@@ -209,6 +440,16 @@ content:
             lb-col: false
             classes: {  }
     region: main
+  field_videos:
+    type: entity_reference_entity_view
+    weight: 11
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
 hidden:
   langcode: true
   links: true
+  search_api_excerpt: true

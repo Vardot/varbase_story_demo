@@ -1,0 +1,181 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.horizontal_media_teaser_large
+    - field.field.node.media_story.body
+    - field.field.node.media_story.field_2_audios
+    - field.field.node.media_story.field_2_files
+    - field.field.node.media_story.field_2_images
+    - field.field.node.media_story.field_2_instagram_posts
+    - field.field.node.media_story.field_2_medias
+    - field.field.node.media_story.field_2_tweets
+    - field.field.node.media_story.field_2_videos
+    - field.field.node.media_story.field_3_audios
+    - field.field.node.media_story.field_3_files
+    - field.field.node.media_story.field_3_images
+    - field.field.node.media_story.field_3_instagram_posts
+    - field.field.node.media_story.field_3_medias
+    - field.field.node.media_story.field_3_tweets
+    - field.field.node.media_story.field_3_videos
+    - field.field.node.media_story.field_audio
+    - field.field.node.media_story.field_audios
+    - field.field.node.media_story.field_file
+    - field.field.node.media_story.field_files
+    - field.field.node.media_story.field_gallery
+    - field.field.node.media_story.field_image
+    - field.field.node.media_story.field_images
+    - field.field.node.media_story.field_instagram
+    - field.field.node.media_story.field_instagram_posts
+    - field.field.node.media_story.field_media
+    - field.field.node.media_story.field_medias
+    - field.field.node.media_story.field_tweet
+    - field.field.node.media_story.field_tweets
+    - field.field.node.media_story.field_video
+    - field.field.node.media_story.field_videos
+    - node.type.media_story
+  module:
+    - ds
+    - smart_trim
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: horizontal_media_teaser_large
+      library: vmi/horizontal_media_teaser_large
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          right: article
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_image
+        - field_video
+        - field_media
+      right:
+        - node_title
+        - body
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
+id: node.media_story.horizontal_media_teaser_large
+targetEntityType: node
+bundle: media_story
+mode: horizontal_media_teaser_large
+content:
+  body:
+    type: smart_trim
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 90
+      trim_type: words
+      trim_suffix: ' ...'
+      more_link: false
+      more_text: More
+      summary_handler: full
+      trim_options:
+        text: true
+      more_class: more-link
+    third_party_settings: {  }
+    region: right
+  field_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: s06_standard
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: a
+            ow-cl: ''
+            ow-at: 'href="[node:url]"'
+            ow-def-at: true
+            ow-def-cl: true
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: true
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: true
+            suffix: ''
+            lbw: false
+            lb-col: false
+            fis: false
+            fi: false
+    region: left
+  field_media:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: s06_standard
+      link: false
+    third_party_settings: {  }
+    region: left
+  field_video:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: s06_standard
+      link: false
+    third_party_settings: {  }
+    region: left
+hidden:
+  field_2_audios: true
+  field_2_files: true
+  field_2_images: true
+  field_2_instagram_posts: true
+  field_2_medias: true
+  field_2_tweets: true
+  field_2_videos: true
+  field_3_audios: true
+  field_3_files: true
+  field_3_images: true
+  field_3_instagram_posts: true
+  field_3_medias: true
+  field_3_tweets: true
+  field_3_videos: true
+  field_audio: true
+  field_audios: true
+  field_file: true
+  field_files: true
+  field_gallery: true
+  field_images: true
+  field_instagram: true
+  field_instagram_posts: true
+  field_medias: true
+  field_tweet: true
+  field_tweets: true
+  field_videos: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

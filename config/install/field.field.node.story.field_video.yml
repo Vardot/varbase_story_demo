@@ -10,7 +10,7 @@ id: node.story.field_video
 field_name: field_video
 entity_type: node
 bundle: story
-label: Video
+label: '1 Video'
 description: ''
 required: false
 translatable: false

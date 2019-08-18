@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_medias
+    - media.type.audio
+    - media.type.file
+    - media.type.image
+    - media.type.instagram
+    - media.type.remote_video
+    - media.type.tweet
+    - media.type.video
+    - node.type.story
+id: node.story.field_medias
+field_name: field_medias
+entity_type: node
+bundle: story
+label: 'Unlimited Medias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      audio: audio
+      file: file
+      image: image
+      instagram: instagram
+      remote_video: remote_video
+      tweet: tweet
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: tweet
+field_type: entity_reference

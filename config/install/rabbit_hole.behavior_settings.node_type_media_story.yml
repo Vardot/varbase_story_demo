@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.media_story
+id: node_type_media_story
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
