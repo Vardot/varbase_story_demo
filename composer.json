@@ -23,6 +23,7 @@
     }
   ],
   "require": {
+    "drupal/core": "*",
     "drupal/varbase_core": "8.*",
     "drupal/varbase_media": "7.*",
     "drupal/better_normalizers": "~1.0"

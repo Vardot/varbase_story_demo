@@ -7,5 +7,3 @@ core: 8.x
 dependencies:
   - varbase_core:varbase_core
   - varbase_media:varbase_media
-  - default_content:default_content
-  - better_normalizers:better_normalizers
