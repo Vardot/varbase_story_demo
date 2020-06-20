@@ -35,7 +35,7 @@ dependencies:
     - node.type.media_story
   module:
     - ds
-    - slick_media
+    - slick
     - text
     - user
 third_party_settings:
