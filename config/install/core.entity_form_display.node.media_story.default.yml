@@ -33,10 +33,16 @@ dependencies:
     - field.field.node.media_story.field_video
     - field.field.node.media_story.field_videos
     - node.type.media_story
+    - workflows.workflow.varbase_simple_workflow
   module:
+    - content_moderation
     - field_group
+    - length_indicator
     - media_library
+    - media_library_edit
     - path
+    - scheduler
+    - scheduler_content_moderation_integration
     - text
 third_party_settings:
   field_group:
@@ -128,6 +134,7 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   created:
@@ -141,118 +148,170 @@ content:
     weight: 14
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_2_files:
     type: media_library_widget
     weight: 15
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_2_images:
     type: media_library_widget
     weight: 11
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_2_instagram_posts:
     type: media_library_widget
     weight: 16
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_2_medias:
     type: media_library_widget
     weight: 10
     settings:
-      media_types: {  }
-    third_party_settings: {  }
+      media_types:
+        - audio
+        - file
+        - image
+        - instagram
+        - remote_video
+        - tweet
+        - video
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_2_tweets:
     type: media_library_widget
     weight: 13
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_2_videos:
     type: media_library_widget
     weight: 12
     settings:
-      media_types: {  }
-    third_party_settings: {  }
+      media_types:
+        - remote_video
+        - video
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_3_audios:
     type: media_library_widget
     weight: 18
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_3_files:
     type: media_library_widget
     weight: 19
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_3_images:
     type: media_library_widget
     weight: 16
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_3_instagram_posts:
     type: media_library_widget
     weight: 21
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_3_medias:
     type: media_library_widget
     weight: 15
     settings:
-      media_types: {  }
-    third_party_settings: {  }
+      media_types:
+        - audio
+        - file
+        - image
+        - instagram
+        - remote_video
+        - tweet
+        - video
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_3_tweets:
     type: media_library_widget
     weight: 20
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_3_videos:
     type: media_library_widget
     weight: 17
     settings:
-      media_types: {  }
-    third_party_settings: {  }
+      media_types:
+        - remote_video
+        - video
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_audio:
     type: media_library_widget
     weight: 11
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_audios:
     type: media_library_widget
     weight: 22
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_file:
     weight: 12
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     type: media_library_widget
     region: content
   field_files:
@@ -260,27 +319,35 @@ content:
     weight: 23
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_gallery:
     type: media_library_widget
     weight: 2
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_image:
     weight: 9
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     type: media_library_widget
     region: content
   field_images:
     weight: 20
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     type: media_library_widget
     region: content
   field_instagram:
@@ -288,14 +355,18 @@ content:
     weight: 14
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_instagram_posts:
     type: media_library_widget
     weight: 25
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_media:
     weight: 8
@@ -308,36 +379,57 @@ content:
     type: media_library_widget
     weight: 19
     settings:
-      media_types: {  }
-    third_party_settings: {  }
+      media_types:
+        - audio
+        - file
+        - image
+        - instagram
+        - remote_video
+        - tweet
+        - video
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_tweet:
     type: media_library_widget
     weight: 13
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_tweets:
     type: media_library_widget
     weight: 24
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_video:
     weight: 10
     settings:
-      media_types: {  }
-    third_party_settings: {  }
+      media_types:
+        - remote_video
+        - video
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     type: media_library_widget
     region: content
   field_videos:
     type: media_library_widget
     weight: 21
     settings:
-      media_types: {  }
-    third_party_settings: {  }
+      media_types:
+        - remote_video
+        - video
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   langcode:
     type: language_select
@@ -346,19 +438,30 @@ content:
     settings:
       include_locked: true
     third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
   path:
     type: path
     weight: 12
     settings: {  }
     third_party_settings: {  }
     region: content
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 10
-    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
     region: content
+    settings: {  }
+    third_party_settings: {  }
+  publish_state:
+    type: scheduler_moderation
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
@@ -366,20 +469,19 @@ content:
     weight: 15
     region: content
     third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 11
-    third_party_settings: {  }
-    region: content
   title:
     type: string_textfield
     weight: 1
     settings:
       size: 60
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: 'Enter title here'
+    third_party_settings:
+      length_indicator:
+        indicator: true
+        indicator_opt:
+          optimin: 15
+          optimax: 50
+          tolerance: 10
     region: content
   translation:
     weight: 14
@@ -393,11 +495,26 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  unpublish_state:
+    type: scheduler_moderation
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   url_redirects:
     weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  promote: true
+  sticky: true
