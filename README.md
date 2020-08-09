@@ -18,7 +18,7 @@ composer create-project vardot/varbase-project PROJECT_DIR_NAME --no-dev --no-in
 ### Install Varbasee Story Demo .
 
 ```
-composer require vardot/varbase_story_demo:^8.8.0
+composer require vardot/varbase_story_demo:~8.0
 ```
 
 ### Install Varbasee Story Demo the progress Development.
