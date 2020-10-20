@@ -24,7 +24,7 @@ composer require vardot/varbase_story_demo:~9.0
 ### Install Varbasee Story Demo the progress Development.
 
 ```
-composer require vardot/varbase_story_demo:dev-9.0.x
+composer require vardot/varbase_story_demo:9.0.x-dev
 ```
 
 # Varbase Media Library Media
