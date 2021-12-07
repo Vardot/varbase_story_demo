@@ -7,7 +7,7 @@ Browsers, and Provides Story content type and related configuration.
 ## Requirements
 * [Varbase](https://www.drupal.org/project/varbase) profile.
 ```
-composer create-project vardot/varbase-project:~9 PROJECT_DIR_NAME --no-dev --no-interaction
+composer create-project vardot/varbase-project:9.0.x-dev PROJECT_DIR_NAME --no-dev --no-interaction
 ```
 
 * Varbase Core.
@@ -18,7 +18,7 @@ composer create-project vardot/varbase-project:~9 PROJECT_DIR_NAME --no-dev --no
 ### Install Varbasee Story Demo .
 
 ```
-composer require vardot/varbase_story_demo:~9.0
+composer require vardot/varbase_story_demo:~9.0.0
 ```
 
 ### Install Varbasee Story Demo the progress Development.
