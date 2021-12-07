@@ -2,7 +2,7 @@ name: 'Varbase Story Demo'
 description: 'This a Demo feature to test and see how we can use Varbase Media Entity Browsers, and Provides Story content type and related configuration.'
 type: module
 package: 'Varbase Demos'
-version: 9.0.x-dev
+version: 9.1.x-dev
 core_version_requirement: ^9
 dependencies:
   - varbase_core:varbase_core
