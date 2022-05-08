@@ -7,7 +7,7 @@ Provides Story content type and related configuration.
 ## Requirements
 * [Varbase](https://www.drupal.org/project/varbase) profile.
 ```
-composer create-project vardot/varbase-project:9.1.x-dev PROJECT_DIR_NAME --no-dev --no-interaction
+composer create-project vardot/varbase-project:10.0.x-dev PROJECT_DIR_NAME --no-dev --no-interaction
 ```
 
 * Varbase Core.
@@ -18,13 +18,13 @@ composer create-project vardot/varbase-project:9.1.x-dev PROJECT_DIR_NAME --no-d
 ### Install Varbasee Story Demo .
 
 ```
-composer require vardot/varbase_story_demo:~9.1.0
+composer require vardot/varbase_story_demo:~10.0
 ```
 
 ### Install Varbasee Story Demo the progress Development.
 
 ```
-composer require vardot/varbase_story_demo:9.1.x-dev
+composer require vardot/varbase_story_demo:10.0.x-dev
 ```
 
 # Varbase Media Library Media
